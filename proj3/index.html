@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokedex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";>
+  <link rel="stylesheet" type="text/css" href="http://www.cwong.net/style2.css?v=1.3">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body class = "background">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.cwong.net/" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-home"></span></a>
+      </div>
+    </div>
+  </nav>
+<div class = "container">
+  <p class = "screenshots"> Here are some screenshots of my project: Pokedex</p>
+  <div class = "ssproperties">
+    <div>
+    <img src = "Pgui1.png">
+  </div>
+  <p class = "FAguiwidth">
+    Here is a project I worked on during the last week of summer vacation before starting sophomore year at Stony Brook.
+    Currently, it still has parts that need to be fixed/implemented (planning on using PreparedStatements, to get used
+    defending against possible SQL Injections, and autocomplete search function later on
+    using a tree data structure). More screenshots to be added later! Just been busy since starting school again.
+    <br></br>
+    It contains the original 150 Pokémon (Bulbasaur to Mewtwo).
+      My project is based on a <a href = "http://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex"> Pokedex </a>,
+      a small, red encyclopedia device used for storing Pokémon information. My Pokedex contains the original
+      150 Pokémon (from Bulbasaur to Mewtwo) and was built using PHP, to retrieve data from Pokéapi.co, SQLite, to store the data from Pokéapi.co,
+      and Java, to read the data from the database (using the Java Database Connector) and design the Pokédex GUI (using the JavaFX framework).
+</p>
+<p> &nbsp;
+    &nbsp;
+    &nbsp;
+</p>
+<div>
+<img class = "proj3" src = "Pcode1.png">
+</div>
+<p class = "FAguiwidth">
+    I decided to brush up on my PHP skills by creating a small application that retrieves data from an API (<a href = "pokeapi.co">Pokeapi</a>)
+    For my Pokedex, I decided to pull in data for the name, type(s), weight, height, and number of the Pokemon from the web service,
+    so I made variables to hold the data ($pokemonName, $pokemonType, $pokemonType2, etc.).
+    Then I instantiated a new SQLite database called "pokebase.sql", and created a new table inside of it ("poketable").
+    In the table, I set various data elements of different types, which I later use to store the information into from the API.
+</p>
+<p> &nbsp;
+    &nbsp;
+    &nbsp;
+</p>
+<div>
+  <img src = "Pcode2.png">
+</div>
+<p class = "FAguiwidth">
+    Now here is where a lot of the important data pulling from the API stuff happens. I only wanted to store the first generation Pokemon
+    (the original 150) into my Pokedex, so I ran a while loop up to 150.
+    With the help of the $pokemonCounter in the while loop, the link of the Pokemon is stored into the variable $pokemonGET2.
+    Then I use the file_get_contents so I can store all the data for that Pokemon as a String value into the variable $pokeread.
+    Using the variable $pokeConvert, I ran the function json_decode to convert the $pokeread String into an array making it more convenient for
+    me to pick out which data I want to use.
+</p>
+<p> &nbsp;
+    &nbsp;
+    &nbsp;
+</p>
+<div>
+  <img class = "proj3" src = "Pcode3.png">
+</div>
+<p class = "FAguiwidth">
+  Here I insert the data of the Pokemon read from the API into the database before updating the counter for the while loop.
+</p>
+<p> &nbsp;
+    &nbsp;
+    &nbsp;
+</p>
+<div>
+  <img class = "proj3" src = "Pdatabase.png">
+  </div>
+  <p class = "FAguiwidth">
+    I downloaded the browser tool "SQLite Manager" for Firefox - a very useful GUI for me to view the contents of my database, and check
+    if everything's stored correctly.
+  </p>
+  <p> &nbsp;
+      &nbsp;
+      &nbsp;
+  </p>
+<div>
+  <img src = "Pcode4.png">
+  </div>
+  <p class = "FAguiwidth">
+    Now I decided to transition over to Java so I can create the desktop application for my Pokedex. (I simply moved over my pokebase.sql file
+    to my Eclipse project). This is where I downloaded the Java Database Connector (JDBC) so I can pull data out of my SQLite file,
+    and use in my program. As you can see, I used the technique: method overload. I had two methods that were almost identical,
+    one method gets data by the name, and the other method gets data by the counter/number. Since the methods were very similar, I pipelined
+    them into a single method, byId(...). Note: this is in the SQLConnector class.
+  </p>
+  <p> &nbsp;
+      &nbsp;
+      &nbsp;
+  </p>
+<div>
+  <img src = "Pcode5.png">
+</div>
+  <p class = "FAguiwidth">
+    Here the String data, "SQLcommand" gets ran into the byId(...) method -- this is where our database connection gets opened, and data is
+    pulled out and stored into my instance variables for later use.
+  </p>
+  <p> &nbsp;
+      &nbsp;
+      &nbsp;
+  </p>
+    <div>
+      <img src = "Pcode6.png">
+      </div>
+      <p class = "FAguiwidth">
+      Here is a snippet of code from Pokedex.java. I created EventHandlers for both the previous and next buttons for my Pokedex --
+      I created the previous button to only work if the counter is greater than 1 (so it will stop on Bulbasaur).
+      Each time the button is successfully clicked, the image and various other data gets removed/updated according to the Pokemon before
+      it.
+      (Screenshots of the different method implementations will be shown later). The next button is very similar to the previous button in concept,
+      but the counter gets added instead of subtracted, and the greatest number the counter can get up to is 150 (hence it will stop
+      after reaching Mewtwo).
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <div>
+      <img src = "Pcode7.png">
+      </div>
+      <p class = "FAguiwidth">
+        EventHandler for the search button is shown above. My program retrieves the input by the user through the search bar,
+        and the input (being name of a Pokemon) is then used to retrieve all of the data from the Pokemon to be displayed onto the GUI.
+        (This is where some errors may occur -- if a user enters a name incorrectly, the ResultSet closes and this will crash the program.
+        I will need to fix this later on, along with using )
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+</div>
+</body>
+</html>

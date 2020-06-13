@@ -1,0 +1,305 @@
+body{
+  margin-bottom:100px;
+  min-height:400px;
+}
+
+.idbackground{
+  background-color:white;
+}
+
+.name{
+  text-align: center;
+  font-size: 3vw;
+  top: calc(50% + 150px);
+  left: calc(50% - 250px);
+  width: 550px;
+  position: absolute;
+}
+
+.small{
+  font-size: 1.5vw;
+}
+
+.dauntless{
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  max-width: 100%;
+}
+
+.picture{
+  top: calc(50% - 175px);
+  left: calc(50% - 150px);
+  position: absolute;
+}
+
+.transparent {
+    background:rgba(255,255,255,0.5);
+}
+
+#gamebg{
+  position: relative;
+  text-align: center;
+  background-color:#1E90FF;
+  padding: 70px;
+}
+
+.blur{
+  filter:blur(4px);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.7);
+}
+
+.gamess{
+    position: center;
+    height: 35%;
+    width: 35%;
+}
+
+.background{
+  height:100%;
+  width:100%;
+  background-color:black;
+}
+
+.background2{
+  height:100%;
+  width:100%;
+  background-color:white;
+}
+
+.welcome{
+  font-family: consolas,"courier new",monospace;
+  width: 100%;
+  background-color:lightgrey;
+  text-align:center;
+  top:0 auto;
+  left:0;
+  position:absolute;
+}
+
+#screenshots, .screenshots{
+    background-color:#FF8C00;
+    color: white;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    font-size:20px;
+    text-align:center;
+    width: 100%;
+    position: relative;
+}
+
+
+.idscreenshots{
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    font-size:20px;
+    text-align:left;
+    width: 100%;
+    line-height: 2em;
+
+}
+.idscreenshot{
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    font-size:20px;
+    text-align:center;
+    width: 100%;
+    line-height: 2em;
+
+}
+
+.ssproperties{
+  background-color:#FF8C00;
+  color:white;
+  text-align:center;
+}
+
+#aboutme{
+  position: relative;
+  background-color: white;
+  padding-top:50px;
+  padding-bottom: 100px;
+}
+
+.aboutme{
+  position: relative;
+  font-size: 3.5vw;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#intro{
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#footer{
+  position:absolute;
+  background-color: #e6e6e6;
+  /*#4286f4;*/
+  /*#8A2BE2;*/
+  color:black;
+  width:100%;
+  height:auto;
+  text-align:center;
+  font-size:15px;
+  left:0px;
+  font-family:courier;
+  padding-bottom:5px;
+}
+
+.check{
+  background-color:white;
+  font-size:25px;
+  text-align: left;
+  position:absolute;
+  width:auto;
+}
+
+.intro{
+  font-size: 65px;
+  width:100%;
+  text-align: center;
+}
+
+.white{
+  color: white;
+}
+
+.gamedes{
+  width: 100%;
+  font-size: 50px;
+  text-align:left;
+  color: white;
+}
+
+.icon:hover{
+  background-color: yellow;
+}
+
+.tinify{
+  width: 60%;
+  height: 60%;
+}
+
+.center{
+    text-align:center;
+}
+.footer{
+    bottom:0px;
+    background-color:black;
+    color:white;
+    width:100%;
+    position:absolute;
+    text-align:center;
+    font-size:10px;
+    left:0px;
+    font-family:verdana;
+}
+.footer2{
+    bottom:0px;
+    position:absolute;
+    background-color:#FF8C00;
+    color:white;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-size:15px;
+    left:0px;
+    font-family:courier;
+}
+
+.width1{
+  color:#d3d3d3;
+  text-align: left;
+  font-size:150%;
+  width:100%;
+  border-style: solid;
+  border-bottom-width:60px;
+  border-left-width: 198px;
+  border-right-width:198px;
+  border-color:black;
+}
+.width2{
+  color:#d3d3d3;
+  text-align: left;
+  font-size:125%;
+  width:100%;
+  border-color:black;
+  border-bottom-width:100px;
+  border-top-width:0;
+  border-left-width:0;
+  border-right-width:0;
+}
+.width3{
+  color:#d3d3d3;
+  text-align:center;
+  font-size:120%;
+  width:935px;
+}
+.width4{
+  color:#d3d3d3;
+  text-align:center;
+  font-size:115%;
+  width:1275px;
+}
+.width5{
+  color:#d3d3d3;
+  text-align:center;
+  font-size:100%;
+  width: auto;
+  height: auto;
+}
+
+.realfooter{
+  bottom:0;
+  font-size:20px;
+  background-color:white;
+  text-align:center;
+  position:sticky;
+  width:100%;
+  height: 100px;
+}
+
+#proj3{
+  width:50%;
+  height:50%;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.card:hover .img-top {
+    display: inline;
+}
+
+.team-member {
+  margin-bottom: 20px;
+}

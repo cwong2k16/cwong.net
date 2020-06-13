@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Christopher Wong - Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css?v=9.08">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script>
+    $(document).ready(function(){
+       $("#fade").fadeIn(1000);
+       $("#fade2").delay(1000).fadeIn(1000);
+       $("#fade3").delay(2000).fadeIn(1000);
+    });
+  </script>
+</head>
+
+<body class = "idbackground">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-home"></span></a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#screenshots">Projects</a></li>
+          <li><a href="#gamebg">Game</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "container-fluid dauntless">
+    <img class = "img-responsive blur" src = "dauntless.png" alt="dauntless">
+  </div>
+  <div class = "picture">
+  <img class = "img-circle img-responsive" id = "fade" src = "me.png" alt = "me" style = "display:none">
+  </div>
+  <div class = "container-fluid name white" id = "fade2" style = "display:none">Christopher Wong
+    <div class = "small" id = "fade3" style = "display:none">Software Engineer Intern at <a href = "http://www.sotertechnologies.com/" target = "_blank">Soter Technologies</a></div>
+  </div>
+
+  <div class="container" id = "aboutme">
+    <div class = "center aboutme">
+      About Me
+    </div>
+    <div class = "container">
+      <p id = "intro">
+        My name is Christopher Wong and I am a Junior computer science major at
+        <a href = "http://www.stonybrook.edu/" target="_blank"> Stony Brook University</a>.
+      </p>
+    </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2><ul>Hometown</ul></h2>
+      <ul>Born and raised in <a href = "https://en.wikipedia.org/wiki/Staten_Island" target = "_blank">Staten Island</a>, New York.</ul>
+    </div>
+
+    <div class="col-sm-4">
+      <h2>Skills &amp; Interests</h2>
+        <ul>
+          <li>
+            Programming/Scripting Languages
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C</li>
+              <li>C#</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+          <li>Web Development </li>
+          <ul>
+            <li>
+              HTML
+            </li>
+            <li>
+              CSS/SCSS/Bootstrap
+            </li>
+            <li>
+              jQuery
+            </li>
+            <li>
+              Node.js/Express.js
+            </li>
+            <li>
+              Mongoose
+            </li>
+            <li>
+              React/React-Native/AngularJS
+            </li>
+          </ul>
+          <li>Game Development</li>
+          <ul>
+            <li>
+              libGDX
+            </li>
+            <li>
+              Phaser
+            </li>
+          </ul>          
+          <li>Database</li>
+          <ul>
+            <li>
+              MongoDB
+            </li>
+            <li>
+              SQL
+            </li>
+          </ul>
+          <li>Version Control</li>
+          <ul>
+            <li>Git</li>
+          </ul>
+        </ul>
+    </div>
+    <div class="col-sm-4">
+      <h2><ul>Links</ul></h2>
+      <ul><a href = "https://github.com/cwong2k16/" target = "_blank"> GitHub</a></ul>
+      <ul><a href = "https://codepen.io/christhebarbarian/" target = "_blank">Codepen</a></ul>
+      <ul><a href = "https://glitch.com/@cwong2k16" target = "_blank">Glitch</a></ul>
+      <ul><a href = "https://bitbucket.org/cwong2015/" target = "_blank">Bitbucket</a></ul>
+    </div>
+  </div>
+</div>
+    <div class="container-fluid" id = "screenshots">
+      <div>
+        &nbsp;
+          &nbsp;
+            &nbsp;
+      </div>
+      <div class = "intro">
+        Here are some projects I've built!
+      </div>
+    <p class = "screenshots"> Source code can be found in my <a href = "https://github.com/cwong2k16/"
+      target = "_blank">GitHub</a>. </p>
+    <div class = "ssproperties img-responsive">
+      <div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+      </div>
+      <h1> PreciousMenuApp </h1>
+      <h2> An interactive web app menu for local dim sum restaurant, Precious Island Tea Shop.</h2>
+      <h2> *Allows site admin to add and delete menu items on the fly for customers to view.</h2>
+        <div>
+          &nbsp;
+        </div>
+          <a href = "https://github.com/cwong2k16/MenuApp" target = "_blank"><img class ="tinify card" src = "preciousmenu.png"></a>
+          <h3> Tech Stack: React, Node.js, Express, MongoDB, Mongoose</h3>
+          <hr>
+          <div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+          </div>
+        <h1> PollSquare </h1>
+        <h2> Interactive voting system
+        </h2>
+        <h2>* Allows users to sign-up through Gmail using Passport Authentication</h2>
+        <h2>* Build and publish their own polls as well as vote on other user polls</h2>
+          <div>
+            &nbsp;
+          </div>
+          <a href = "https://github.com/cwong2k16/PollSquare" target = "_blank"><img class = "tinify card" src = "pollsquare.png"></a>
+          <h3> Tech Stack: Node.js, Express, MongoDB, Mongoose, Passport, EJS, jQuery, Chart.js</h3>
+          <hr>
+          <div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+          </div>
+          <h1> Phrazes </h1>
+          <table align = "center">     
+           <tr align = "right">
+              <th>
+                <h2> A passphrase management system for creating easy to remember passphrases</h2>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2> Front End Engineer: <a href = "http://www.stanleylim.me/" target="_blank">Stanley Lim</a></h4>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2> Back End Engineers: Christopher Wong, <a href = "https://fanngdai.github.io"target="_blank">Fanny Dai</a>, <a href = "http://www.mikeygulati.me" target="_blank">Mikey Gulati</a></h2>
+              </th>
+            </tr>
+          </table>
+          <div>
+            &nbsp;
+          </div>
+        <a href = "http://phrazes.net/" target = "_blank"><img class = "tinify card" src = "phrazes.png"></a>
+        <h3> Tech Stack: jQuery, Cirrus, Node.js, Passport, Express, Mongoose, MongoDB, Zxcvbn, EJS</h3>
+        <hr>
+        <div>
+          &nbsp;
+          &nbsp;
+          &nbsp;
+        </div>
+          <!-- <a href = "http://cwong.net/screenshots/proj3"><img id = "proj3" src = "http://cwong.net/screenshots/proj3/Dgui1.png"></a> -->
+    </div>
+      <div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+      </div>
+  </div>
+
+    <div id = "gamebg">
+      <div class = "intro white">
+        Games!
+      </div>
+      <div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+      </div>
+      <div class = "container gamedes">
+        Here is a platformer game I built over the winter break using the LibGDX framework for Desktop, Android and HTML5.
+        I call it "Duck Adventures" and a demo can be played on my website.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <img class = "gamess card" src = "duckss.png" height = "480" width = "720" alt = "duckgame">
+      <img class = "gamess card" src = "duckss2.png" height = "480" width = "720" alt = "duckgame2">
+      <div class = "center">
+        <a href = "http://www.cwong.net/mygame/index.html" target = "_blank" class = "intro white" >Play it here! </a>
+      </div>
+    </div>
+
+  <div class = "container-fluid" id = "footer">
+      <p> My Profiles</p>
+      <a href="https://www.facebook.com/christopher.wong.737448" target="_blank"><img class = "icon" src="http://www.niftybuttons.com/scribble/facebook.png" border="0" margin="1px"></a>
+      <a href="http://www.youtube.com/chrisgopherrong" target="_blank"><img class ="icon" src="http://www.niftybuttons.com/scribble/youtube.png" border="0" margin="1px"></a>
+  </div>
+</body>
+</html>

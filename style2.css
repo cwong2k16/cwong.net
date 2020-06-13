@@ -1,0 +1,180 @@
+body{
+  margin-bottom:100px;
+  min-height:400px;
+}
+
+.background{
+  height:100%;
+  width:100%;
+  background-color:#641882;
+
+}
+
+.background2{
+  height:100%;
+  width:100%;
+  background-color:white;
+}
+
+.welcome{
+  font-family: consolas,"courier new",monospace;
+  width: 100%;
+  background-color:lightgrey;
+  text-align:center;
+  top:0 auto;
+  left:0;
+  position:absolute;
+
+
+}
+
+.screenshots{
+    background-color:#641882;
+    color:#d3d3d3;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    font-size:20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.ssproperties{
+  background-color:#641882;
+  color:#d3d3d3;
+  width:100%;
+  text-align:center;
+
+}
+
+.check{
+  background-color:white;
+  font-size:25px;
+  text-align: left;
+  position:absolute;
+  width:auto;
+}
+
+.intro{
+    font-size: 65px;
+    width:100%;
+    text-align: center;
+
+}
+
+.center{
+    text-align:center;
+}
+.footer{
+    bottom:0px;
+    background-color:black;
+    color:white;
+    width:100%;
+    position:fixed;
+    text-align:center;
+    font-size:10px;
+    left:0px;
+    font-family:verdana;
+}
+.footer2{
+    bottom:0px;
+    position:fixed;
+    background-color:#FF8C00;
+    color:white;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-size:15px;
+    left:0px;
+    font-family:courier;
+
+}
+.footer2wrap{
+  bottom:0px;
+  height:auto;
+  width:100%;
+  position:absolute;
+}
+
+
+.width1{
+  color:#d3d3d3;
+  text-align: left;
+  font-size:150%;
+  width:100%
+  border-style: solid;
+  border-bottom-width:60px;
+  border-left-width: 198px;
+  border-right-width:198px;
+  border-color:black;
+}
+.width2{
+  color:#d3d3d3;
+  text-align: left;
+  font-size:125%;
+  width:100%;
+  border-style;
+  border-color:black;
+  border-bottom-width:100px;
+  border-top-width:0;
+  border-left-width:0;
+  border-right-width:0;
+}
+.width3{
+  color:#d3d3d3;
+  text-align:center;
+  font-size:120%;
+  width:935px;
+}
+.width4{
+  color:#d3d3d3;
+  text-align:center;
+  font-size:115%;
+  width:1275px;
+}
+.width5{
+  font-size:150%;
+  color:#d3d3d3;
+  text-align:center;
+}
+
+.realfooter{
+  bottom:0;
+  font-size:20px;
+  background-color:white;
+  text-align:center;
+  position: sticky;
+  width:100%;
+  height: 100px;
+}
+.FAguiwidth{
+  color:#d3d3d3;
+  text-align: left;
+  font-size:150%;
+  width:100%;
+  border-bottom-width:60px;
+  border-left-width: 198px;
+  border-right-width:198px;
+  border-color:black;
+}
+
+#proj3{
+  width:35%;
+  height:35%;
+}
+.proj3{
+  width:45%;
+  height:45%;
+}
+
+#proj4{
+  width:30%;
+  height:30%;
+}
+
+.proj4{
+  width:80%;
+  height:80%;
+}

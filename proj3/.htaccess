@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+DirectorySlash off
+RedirectMatch 302 ^/screenshot$ /screenshot.html
+Options All -Indexes

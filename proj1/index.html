@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fitness App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";>
+  <link rel="stylesheet" type="text/css" href="http://www.cwong.net/style2.css?v=1.4">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body class = "background">
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://cwong.net" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-home"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <p class = "screenshots"> Here are some screenshots of my Java project: Fitness App </p>
+  <div class = "ssproperties">
+    <img src = "FAgui2.png">
+    <p class = "FAguiwidth"> Here is a project I worked on during the last week of summer vacation before starting freshman year at Stony Brook.
+        It is an application that retrieves some of the user's physical data (age, weight in lbs, height in inches, sex)
+        as well as minutes of an exercise preformed and the exercise the user chooses from the combo box.
+        In the screenshot shown above, the example user is an 18 year old, 5'7", 150 lbs male who has preformed 45 minutes of vigorous weight lifting.</p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAgui3.png">
+    <p class = "FAguiwidth"> Here the user can click on the "Add" button which will lead to the result text field displaying the number of calories burned for that particular exercise chosen,
+        with the physical attributes and minutes preformed taken into consideration. As displayed above, the result is an expenditure of 324 calories.</P>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAgui4.png">
+    <p class = "FAguiwidth"> The user may also wish to choose a different exercise and view the calories burned for it. In the example above, the user switches the exercise to "Jogging" and
+        sets the number of minutes preformed to 20.
+        Jogging for 20 minutes for the user burns 168 calories as the results shown above.</p>
+    <p>&nbsp;
+       &nbsp;
+       &nbsp;
+    </p>
+    <img src = "FAgui5.png">
+    <p class = "FAguiwidth"> Finally, the user may wish to find out the total amount of calories burned. Simply click the "Finish" button and the program will add up the calories and display the
+        final accumulated result. The total is 492 calories burned (324 + 168). </p>
+    <p>
+        &nbsp;
+        &nbsp;
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAcode1.png">
+    <p class = "FAguiwidth">
+      Here are the main algorithms used in this program. As you see, part of the whole calorie burner algorithm is based on a person's basal metabolic rate (BMR).
+      <p class = "FAguiwidth">
+      For males, the BMR formula is 66 + (6.23 x weight in lbs) + (12.7 x height in inches) - (6.8 x age in years).
+    </p>
+    <p class = "FAguiwidth">
+      For females, the BMR formula is 655 + (4.35 x weight in lbs) + (4.7 x height in inches) - (4.7 x age in years).
+    </p>
+    <p class = "FAguiwidth">
+      As stated in the fourth comment of the screen above, calorie burn is "BMR/24" multiplied by <a href = " https://en.wikipedia.org/wiki/Metabolic_equivalent">"MET"</a> value multiplied by T. MET means
+      "Metabolic Equivalent of Task" and T simply means time (in this case, we measure time using minutes). The purpose of dividing BMR by 24 on line 32 of the code is related to time (the rate of your basal
+      metabolic rate by the hour). However, since we are going by minutes of exercise, I took it a step further and divided by 60 (now the rate of BMR is by the minute as desired). While the "BMR/24"
+      (or rather (BMR/24)/60) part here is fully handled, the "MET x T" is represented by the "caloriesBurned" variable. The latter is described following the next screen.
+    </p>
+  </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAcode2.png">
+    <p class = "FAguiwidth">In this screen, an exercise class is made to handle the MET * T portion of the calorie burning formula with its own unique MET value - Basketball with a MET value of 9.3.
+                            As you can see here, this MET value is then multipled by whatever minutes input by the user.</p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAcode3.png">
+    <p class = "width5">Here is the Person class which handles the construction of a Person object using the user's inputs.
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAcode4.png">
+    <p class = "width5">A snippet of the GUI part of the code - Using border layout and flow layout to create the general design of the user interface.</p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAcode5.png">
+    <p class = "width5">Action listeners are created (for the Add and Finish buttons) and the construction of the combo box is created here.</p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "FAcode6.png">
+    <p class = "width5">Here data is parsed accordingly after being pulled from the text fields and then used to create the Person object (with the exception of "minutes" which is
+                        used in the "calculate" method along with the Person object p).</p>
+  </div>
+
+  </div>
+</body>
+</html>

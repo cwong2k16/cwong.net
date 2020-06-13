@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Temperature Converter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";>
+  <link rel="stylesheet" type="text/css" href="http://www.cwong.net/style2.css?v=1.5">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body class = "background">
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://cwong.net" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-home"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <p class = "screenshots"> Here are some screenshots of my Java project: Temperature Converter </p>
+  <div class = "ssproperties">
+    <img src = "TCgui1.png">
+    <img src = "TCgui2.png">
+    <img src = "TCgui3.png">
+    <p>
+        &nbsp;
+        &nbsp;
+    </p>
+    <p class = "width1">My first self assigned GUI project was this temperature conversion program.
+       In the first screen, a user can enter any numerical value ending with char 'c' (celsius), 'f'
+       (fahrenheit), 'k' (kelvin),'ra' (rankine), or lastly 're' (reaumur) in the first textfield.
+       In the second screen, the user can click on the combobox and choose any of the desired
+       options listed in the drop-down menu. Lastly, in the third screen, the user can press the "Convert!"
+       button to display the resulting value.
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "TCcode1.png">
+    <p class = "width2">Here's a snippet of the source code.
+                        I created a convenient pipelining system to first convert
+                        any valid temperature input value into its celsius equal.
+                        Reason: this is more convenient, quicker, and less messy to
+                        code rather than writing out every back-and-forth
+                        temperature conversion formula/algorithm. Saves time and gets
+                        the same job done.
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "TCcode2.png">
+    <p class = "width3">And here are some of the actual formulas I wrote out in my program to pipeline whatever value into its celsius measurement. </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "TCcode3.png" style = "height:500px;width:1000px">
+    <p class = "width4">Some parts of the GUI source code - Combobox, setting of the result textfield.
+       First element/option of the <span title = "converter">"combobox"</span> is the
+    <span title = "BaseConverter">"pipeline converter".</span> Always calling that conversion first,
+      the input value will be ran first into the pipeline system and then from there, converted
+      to whatever desired value.
+    </p>
+    <p> &nbsp;
+        &nbsp;
+        &nbsp;
+    </p>
+    <img src = "TCcode4.png">
+    <p class = "width5">Used a decimal format to output a clean looking result that doesn't run off with many decimal places.</p>
+  </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#a {
+  height: 33%;
+  width: 33%;
+   background-image: url('images/A-BOB.jpg') no-repeat;
+}
+#a:hover {
+    background-image: url('images/B-BOB.jpg');
+}
+#b {
+  height: 33%;
+  width: 33%;
+    background-image: url('images/A-JIAYI.jpg') no-repeat;
+}
+#b:hover {
+    image: url('images/B-JIAYI.jpg');
+}
+#c {
+  height: 33%;
+  width: 33%;
+    background-image: url('images/A-JIAYI.jpg') no-repeat;
+}
+#c:hover {
+    background-image: url('images/B-KAORI.jpg');
+}
